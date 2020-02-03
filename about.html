@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Про нас</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="icon" href="img/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet'/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class=" d-none d-sm-block">
+		<div class="row">
+			<div class="col-sm-2 col-md-1 offset-sm-1 pt-2">
+				<a href="#"><img class="w-100" src="img/logo.png" alt="logo"></a>
+			</div>
+			<div class="col-sm-6 offset-md-1 offset-sm-0 py-2">
+				<ul class="row head-menu mt-3 mx-n5">
+					<li class="col-3">
+						<a class="d-block mx-n3" href="index.html">головна</a>
+					</li>
+					<li class="col-3">
+						<a class="d-block mx-n3" href="catalog.html">тури</a>
+					</li>
+					<li class="col-3">
+						<a class="d-block mx-n3" href="services.html">послуги</a>
+					</li>
+					<li class="col-3">
+						<a class="d-block mx-n3 active" href="$">про нас</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-3 offset-sm-0 offset-md-1 col-md-2 mt-md-3 mt-sm-4">
+				<div class="mx-auto head-liks">
+					<a class="text-danger" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i></a>
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-telegram-plane"></i></a>
+				</div>
+			</div>
+		</div>	
+	</header>
+	<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Особистиц кабінет</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<form class="w-100">
+					<div class="modal-body">
+						<input class="form-control my-2" type="text" placeholder="Введіть логін">
+						<input class="form-control my-2" type="password" placeholder="Введіть пароль">
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal" class="btn btn-info" data-toggle="modal" data-target="#exampleModal2">Реєстрація</button>
+						<button type="button" data-dismiss="modal" class="btn btn-danger">Відміна</button>
+						<input type="submit" value="Відправити" class="btn btn-success">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel2">Реєстрація</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<form>
+					<div class="modal-body">
+						<input class="form-control my-2" type="text" placeholder="Введіть логін">
+						<input class="form-control my-2" type="email" placeholder="Введіть імейл">
+						<input class="form-control my-2" type="password" placeholder="Введіть пароль">
+						<input class="form-control my-2" type="password" placeholder="Введіть пароль підтвердження">
+						<input class="form-control my-2" type="tel" placeholder="Введіть номер телефону">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="customSwitch1">
+							<label class="custom-control-label text-secondary " for="customSwitch1">Надсилати новини</label>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal" class="btn btn-danger">Відміна</button>
+						<input type="submit" value="Відправити" class="btn btn-success">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-hidden mt-n3 d-block d-sm-none">
+		<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+			<img class="w-100" src="img/logo.png" alt="logo">
+		</button>
+		<div class="navbar-collapse collapse navbar-menu py-3" id="navbarColor01" style="">
+			<div class="div">
+				<a class="user" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i></a>
+			</div>
+			<div class="my-3">
+				<div>
+					<a class="d-block w-100 p-1 text-uppercase text-center" href="index.html">головна</a>
+				</div>
+				<div>
+					<a class="d-block w-100 p-1 text-uppercase text-center" href="catalog.html">тури</a>
+				</div>
+				<div>
+					<a class="d-block w-100 p-1 text-uppercase text-center" href="services.html">послуги</a>
+				</div>
+				<div>
+					<a class="d-block w-100 p-1 text-uppercase text-center" href="#">про нас</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section class="page-4-sec-1">
+		<div class="container py-5">
+			<div class="py-5 my-5">
+				<h2 class="d-block text-center text-white title">Про нас</h2>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row py-5">
+				<div class="col-sm-6"><img class="w-100" src="img/presta.png" alt="presta"></div>
+				<div class="col-sm-6">
+					<div class="pl-5">
+						<div class="redline mb-3"></div>
+						<span class="text-uppercase text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+						<h4 class="mt-4">Подорожі. Тури. Пригоди.</h4>
+						<div><p class=" text-secondary text-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, reiciendis. Temporibus, natus. Voluptate eaque quos voluptas cumque sed, eligendi culpa molestiae ex. Dolorem nam cumque vel ullam animi dicta, voluptatem magnam, assumenda nisi repellat necessitatibus nulla quis adipisci qui molestias? Alias doloremque suscipit ullam veritatis error deserunt delectus libero, quo!</p></div>
+						<a class="py-3 px-4 btn-style " href="#">Більше</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row py-3">
+				<div class="col-sm-4">
+					<h5 class="mt-3">Зверніться до нашого агентства</h5>
+					<p class="text-secondary text-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid earum, quae odit totam, vitae voluptatibus officiis! Aliquam, quae doloremque a. Voluptas possimus, ipsum doloribus, sint a sed eaque. Laudantium maxime placeat, vero similique quos excepturi incidunt, itaque voluptas in! Eaque eos mollitia asperiores modi nulla quam, accusamus incidunt delectus. Laborum.</p>
+				</div>
+				<div class="col-sm-4 text-center text-sm-left">
+					<h5 class="mt-3">Наші контакти</h5>
+					<div>
+						<ul class="ml-n5">
+							<li class=" pl-2 mb-3 text-14"><a href="#">вул Пушкіна дом Колотушкіна</a></li>
+							<li class=" pl-2 mb-3 text-14"><a href="#">+38 000 000 00 00</a></li>
+							<li class=" pl-2 mb-3 text-14"><a href="#">+38 000 000 00 00</a></li>
+							<li class=" pl-2 mb-3 text-14"><a href="#">ilechu@gmail.com</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<h5 class="mt-3">Які-небудь питання?</h5>
+					<div>
+						<form>
+							<input class="w-100 mt-1 p4-form pl-3 text-14" type="text" placeholder="Ваше ім'я">
+							<input class="w-100 mt-1 p4-form pl-3 text-14" type="email" placeholder="Ваш імейл">
+							<textarea class="w-100 mt-1 p4-form pl-3 text-14" placeholder="Ваше запитання"></textarea>
+							<input type="submit" class="d-block mx-auto mx-sm-0 d-sm-inline-block py-1 px-2 border border-info btn-style" value="відправити">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row py-5">
+				<h3 class="w-100 text-center mb-2">Наша команда</h3>
+				<span class="d-inline-block w-100 text-center text-secondary mb-4">Досвідчена команда людей, які захоплюються подорожами</span>
+				<div class="col-sm-4">
+					<div class="w-50 mx-auto"><img class="w-100 border border-secondary rounded-circle" src="img/user.jpg" alt="1"></div>
+					<div class="pt-3">
+						<span class="mt-2 w-100 font-weight-bolder text-center d-inline-block">Ім'я фамілія</span>
+						<span class="font-italic text-info text-center d-inline-block w-100">Посада</span>
+						<p class="text-center text-secondary text-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur impedit inventore ex, ducimus repellendus doloremque.</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="w-50 mx-auto"><img class="w-100 border border-secondary rounded-circle" src="img/user.jpg" alt="1"></div>
+					<div class="pt-3">
+						<span class="mt-2 w-100 font-weight-bolder text-center d-inline-block">Ім'я фамілія</span>
+						<span class="font-italic text-info text-center d-inline-block w-100">Посада</span>
+						<p class="text-center text-secondary text-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at neque similique, nostrum quibusdam excepturi.</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="w-50 mx-auto"><img class="w-100 border border-secondary rounded-circle" src="img/user.jpg" alt="1"></div>
+					<div class="pt-3">
+						<span class="mt-2 w-100 font-weight-bolder text-center d-inline-block">Ім'я фамілія</span>
+						<span class="font-italic text-info text-center d-inline-block w-100">Посада</span>
+						<p class="text-center text-secondary text-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos beatae illo itaque sint, ex veritatis.</p>
+					</div>
+				</div>
+				<a class="d-inline-block w-25 mx-auto text-center py-2 px-3 mt-5 btn-style" href="#">Більше</a>
+			</div>
+		</div>
+	</section>
+	<section class="page-4-sec-2">
+		<div class="container">
+			<h3 class="d-block text-center pb-5 mt-2 ">Чому ми?</h3>
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="page-4-sec-2-cart p-3 pt-5 mb-5">
+						<span class="block-icon d-block mx-auto"><i class="fas fa-sliders-h text-white"></i></span>
+						<div class="text-center">
+							<h5 class="text-white text-uppercase">персоналізоване обслуговування</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, fuga?</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="page-4-sec-2-cart p-3 pt-5 mb-5">
+						<span class="block-icon d-block mx-auto"><i class="fas fa-map-marked-alt"></i></span>
+						<div class="text-center">
+							<h5 class="text-white text-uppercase">
+							широка різноманітність варіантів</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, fuga?</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="page-4-sec-2-cart p-3 pt-5 mb-5">
+						<span class="block-icon d-block mx-auto"><i class="fas fa-thumbs-up"></i></span>
+						<div class="text-center">
+							<h5 class="text-white text-uppercase">ВИСОКОКВАЛІФІРОВАНА СЛУЖБА</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, fuga?</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="page-4-sec-2-cart p-3 pt-5 mb-5">
+						<span class="block-icon d-block mx-auto"><i class="fas fa-headset"></i></span>
+						<div class="text-center">
+							<h5 class="text-white text-uppercase">24/7 ПІДТРИМКА</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, fuga?</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="page-4-sec-2-cart p-3 pt-5 mb-5">
+						<span class="block-icon d-block mx-auto"><i class="fas fa-gem"></i></span>
+						<div class="text-center">
+							<h5 class="text-white text-uppercase">партнерсьі програми</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, fuga?</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="page-4-sec-2-cart p-3 pt-5 mb-5">
+						<span class="block-icon d-block mx-auto"><i class="fas fa-comments-dollar"></i></span>
+						<div class="text-center">
+							<h5 class="text-white text-uppercase">нацкращі ціни</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, fuga?</p>
+						</div>
+					</div>
+				</div>
+
+
+
+
+			</div>
+		</div>
+	</section>
+	<section>
+		<iframe  class="w-100 map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2361.1934123330816!2d91.42115101585236!3d53.71481678005788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d2c3d439b7a2499%3A0x2881e3f6dfe09a4d!2sDom%20Kolotushkina!5e0!3m2!1suk!2sua!4v1579699653623!5m2!1suk!2sua"></iframe>
+	</section>
+
+
+
+
+
+	<footer>
+		<div class="container py-3">
+			<div class="row footer-menu text-center">
+				<div class="col-sm-2"><div class="w-100 ml-5 mt-5 d-none d-sm-block"><img class="w-75" src="img/logo.png " alt="logo"></div></div>
+				<div class="col-sm-3 col-6">
+					<h6 class="w-100">Для клієнтів</h6>
+					<div class="py-sm-2">
+						<ul class="ml-n4">
+							<li><a href="#">Служба підтримки</a></li>
+							<li><a href="#">Довідка</a></li>
+							<li><a href="#">Корпоративні рахунки</a></li>
+							<li><a href="#">Фінансова інформація</a></li>
+							<li><a href="#">Правила та умови</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3 col-6">
+					<h6 class="w-100">Контакти</h6>
+					<div class="py-sm-2">
+						<ul class="ml-n4">
+							<li><a href="#">вул Пушкіна дом Колотушкіна</a></li>
+							<li><a href="#">+38 000 000 00 00</a></li>
+							<li><a href="#">+38 000 000 00 00</a></li>
+							<li><a href="#">ilechu@gmail.com</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3 col-6">
+					<h6 class="w-100">Послуги</h6>
+					<div class="py-sm-2">
+						<ul class="ml-n4">
+							<li><a href="#">Квитки онлайн</a></li>
+							<li><a href="#">Візова підтримка</a></li>
+							<li><a href="#">Страхування</a></li>
+							<li><a href="#">Подарунковий сертифікат</a></li>
+							<li><a href="#">Блог</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-1 col-6 pt-4 link-box">
+					<ul>
+						<li class="d-inline-block d-sm-block"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="d-inline-block d-sm-block"><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li class="d-inline-block d-sm-block"><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+						<li class="d-inline-block d-sm-block"><a href="#"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+</html>

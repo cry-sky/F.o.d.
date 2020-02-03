@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Каталог</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="icon" href="img/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet'/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class=" d-none d-sm-block">
+		<div class="row">
+			<div class="col-sm-2 col-md-1 offset-sm-1 pt-2">
+				<a href="#"><img class="w-100" src="img/logo.png" alt="logo"></a>
+			</div>
+			<div class="col-sm-6 offset-md-1 offset-sm-0 py-2">
+				<ul class="row head-menu mt-3 mx-n5">
+					<li class="col-3">
+						<a class="d-block mx-n3" href="index.html">головна</a>
+					</li>
+					<li class="col-3">
+						<a class="d-block mx-n3 active" href="#">тури</a>
+					</li>
+					<li class="col-3">
+						<a class="d-block mx-n3" href="services.html">послуги</a>
+					</li>
+					<li class="col-3">
+						<a class="d-block mx-n3" href="about.html">про нас</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-3 offset-sm-0 offset-md-1 col-md-2 mt-md-3 mt-sm-4">
+				<div class="mx-auto head-liks">
+					<a class="text-danger" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i></a>
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-telegram-plane"></i></a>
+				</div>
+			</div>
+		</div>	
+	</header>
+	<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Особистиц кабінет</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<form class="w-100">
+					<div class="modal-body">
+						<input class="form-control my-2" type="text" placeholder="Введіть логін">
+						<input class="form-control my-2" type="password" placeholder="Введіть пароль">
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal" class="btn btn-info" data-toggle="modal" data-target="#exampleModal2">Реєстрація</button>
+						<button type="button" data-dismiss="modal" class="btn btn-danger">Відміна</button>
+						<input type="submit" value="Відправити" class="btn btn-success">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel2">Реєстрація</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<form>
+					<div class="modal-body">
+						<input class="form-control my-2" type="text" placeholder="Введіть логін">
+						<input class="form-control my-2" type="email" placeholder="Введіть імейл">
+						<input class="form-control my-2" type="password" placeholder="Введіть пароль">
+						<input class="form-control my-2" type="password" placeholder="Введіть пароль підтвердження">
+						<input class="form-control my-2" type="tel" placeholder="Введіть номер телефону">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="customSwitch1">
+							<label class="custom-control-label text-secondary " for="customSwitch1">Надсилати новини</label>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal" class="btn btn-danger">Відміна</button>
+						<input type="submit" value="Відправити" class="btn btn-success">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-hidden mt-n3 d-block d-sm-none">
+		<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+			<img class="w-100" src="img/logo.png" alt="logo">
+		</button>
+		<div class="navbar-collapse collapse navbar-menu py-3" id="navbarColor01" style="">
+			<div class="div">
+				<a class="user" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i></a>
+			</div>
+			<div class="my-3">
+				<div>
+					<a class="d-block w-100 p-1 text-uppercase text-center" href="index.html">головна</a>
+				</div>
+				<div>
+					<a class="d-block w-100 p-1 text-uppercase text-center" href="#">тури</a>
+				</div>
+				<div>
+					<a class="d-block w-100 p-1 text-uppercase text-center" href="services.html">послуги</a>
+				</div>
+				<div>
+					<a class="d-block w-100 p-1 text-uppercase text-center" href="about.html">про нас</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section class="page-2-sec-1">
+		<div class="container py-5">
+			<div class="py-5 my-5">
+				<h2 class="d-block text-center text-white title">Всі тури для тебе</h2>
+			</div>
+		</div>
+	</section>
+	<section>	
+		<div class="container py-5">
+			<ul class="nav nav-tabs text-white">
+				<li class="active">
+					<a class="d-inline-block py-2 px-5 bg-info text-white rounded-top  text-decoration-none mr-1"  data-toggle="tab" href="#panel1">Всі</a>
+				</li>
+				<li>
+					<a class="d-inline-block py-2 px-5 bg-info text-white rounded-top text-decoration-none mr-1"  data-toggle="tab" href="#panel2">Круїзи</a>
+				</li>
+				<li>
+					<a class="d-inline-block py-2 px-5 bg-info text-white rounded-top text-decoration-none mr-1"  data-toggle="tab" href="#panel3">Країни</a>
+				</li>
+
+			</ul>
+
+			<div class="tab-content">
+				<div id="panel1" class="tab-pane active">
+					<div class="sec-2-form pl-4 mx-n3 mx-sm-0">
+						<form class="text-white row ">
+							<div class="row col-sm-10 pb-1">
+								<label class="col-sm-6">
+									<span class="d-block py-2">Тип тура *</span>
+									<select class="w-100 p-1">
+										<option value="">На вихідні</option>
+										<option value="">Екскурійні</option>
+										<option value="">Екстримальні</option>
+										<option value="">Екотури</option>
+										<option value="">Індивідуальні</option>
+										<option value="">Весільні</option>
+									</select>
+								</label>
+								<label class="col-sm-6">
+									<span class="d-block py-2">Країна *</span>
+									<select class="w-100 p-1">
+										<option value="">По Україні</option>
+										<option value="">Турція</option>
+										<option value="">Болгарія</option>
+										<option value="">Єгипет</option>
+										<option value="">Тайланд</option>
+										<option value="">Бразілія</option>
+										<option value="">Індонезія</option>
+										<option value="">Болгарія</option>
+										<option value="">Франція</option>	
+										<option value="">Тд./Тп.</option>
+									</select>
+								</label>
+								<label class="col-sm-4">
+									<span class="d-block py-2">З якого числа *</span>
+									<input class="w-100 d-block" type="date" name="start" value="2020-09-09" required>
+								</label>
+								<label class="col-sm-4">
+									<span class="d-block py-2">По яке число *</span>
+									<input class="w-100 d-block" type="date" name="end" value="2020-09-09" required>
+								</label>
+								<label class="col-sm-2">
+									<span class="d-block py-2">Дорослі</span>
+									<input class="w-100" min="1" type="number">
+								</label>
+								<label class="col-sm-2">
+									<span class="d-block py-2">Діти</span>
+									<input class="w-100" min="0" type="number">
+								</label>
+							</div>
+							<div class="col-sm-2 mx-n3 ml-sm-2 mx-sm-n0 m-0">
+								<input class="btn-submit" type="submit" value="пошук">
+							</div>
+						</form>
+					</div>
+					<div class="row pt-5 py-sm-5">
+						<div class="col-sm-6">
+							<div class="sec-3-img-box mt-5 mt-sm-0">
+								<img class="w-75 pt-4" src="img/page-2-sec-2-img-1.jpg" alt="1">
+								<img class="w-50" src="img/page-2-sec-2-img-2.jpg" alt="1">
+								<img class="w-25" src="img/page-2-sec-2-img-3.jpg" alt="1">
+							</div>
+						</div>
+						<div class="col-sm-6 p-5 p-sm-0 ">
+							<div class="redline mb-3"></div>
+							<span class="text-uppercase text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+							<h4 class="my-4">Весільні тури </h4>
+							<p class="pl-5 text-secondary mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni rerum consectetur, esse fugit reprehenderit fuga, quo, deserunt quidem soluta vitae sed et aperiam! Quo tenetur recusandae maiores architecto id sunt repellat repellendus nostrum minima molestiae, error qui dolorum iste in explicabo nihil voluptas nesciunt enim veniam. Et temporibus, velit delectus?</p>
+							<a class="ml-5 py-3 px-4 btn-style" href="#">Більше</a>
+						</div>
+					</div>
+					<div class="row py-5">
+						<div class="col-sm-6 order-6 order-sm-0">
+							<div class="redline mb-3"></div>
+							<span class="text-uppercase text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+							<h4 class="my-4">Екстримальні тури </h4>
+							<p class="pl-5 text-secondary mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores minus tenetur, aut quas perspiciatis alias perferendis cum asperiores tempora quo quaerat labore expedita, culpa ut est? </p>
+							<a class="ml-5 py-3 px-4 btn-style" href="#">Більше</a>
+						</div>	
+						<div class="col-sm-6">
+							<div class="slide-box">
+								<div class="content">
+									<div class="slide">
+										<img src="img/slide/img-1.jpg" alt="">
+									</div>
+								</div>
+								<div class="content">
+									<div class="slide">
+										<img src="img/slide/img-2.jpg" alt="">
+									</div>
+								</div>
+								<div class="content">
+									<div class="slide">
+										<img src="img/slide/img-3.jpg" alt="">
+									</div>
+								</div>
+								<div class="content">
+									<div class="slide">
+										<img src="img/slide/img-4.jpg" alt="">
+									</div>
+								</div>
+								<div class="content">
+									<div class="slide">
+										<img src="img/slide/img-5.jpg" alt="">
+									</div>
+								</div>
+								<div class="content">
+									<div class="slide">
+										<img src="img/slide/img-6.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row py-5">
+						<div class="col-sm-6">
+							<div class="slide-box">
+								<div class="content">
+									<div class="slide">
+										<img src="img/slide/img-7.jpg" alt="">
+									</div>
+								</div>
+								<div class="content">
+									<div class="slide">
+										<img src="img/slide/img-8.jpg" alt="">
+									</div>
+								</div>
+								<div class="content">
+									<div class="slide">
+										<img src="img/slide/img-9.jpg" alt="">
+									</div>
+								</div>
+								<div class="content">
+									<div class="slide">
+										<img src="img/slide/img-10.jpg" alt="">
+									</div>
+								</div>
+								<div class="content">
+									<div class="slide">
+										<img src="img/slide/img-11.jpg" alt="">
+									</div>
+								</div>
+								<div class="content">
+									<div class="slide">
+										<img src="img/slide/img-12.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="redline mb-3"></div>
+							<span class="text-uppercase text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+							<h4 class="my-4">Екотуризм </h4>
+							<p class="pl-5 text-secondary mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores minus tenetur, aut quas perspiciatis alias perferendis cum asperiores tempora quo quaerat labore expedita, culpa ut est? </p>
+							<a class="ml-5 py-3 px-4 btn-style" href="#">Більше</a>
+						</div>	
+					</div>
+				</div>
+				<div id="panel2" class="tab-pane fade">
+					<div class="sec-2-form pl-4 mx-n3 mx-sm-0">
+						<form class="text-white row ">
+							<div class="row col-sm-10 pb-1">
+								<label class="col-sm-4">
+									<span class="d-block py-2">Тип круіза *</span>
+									<select class="w-100 p-1">
+										<option value="">Морські</option>
+										<option value="">Річні</option>
+										<option value="">Океанські</option>
+									</select>
+								</label>
+								<label class="col-sm-4">
+									<span class="d-block py-2">Регірн круіза *</span>
+									<select class="w-100 p-1">
+										<option value="">Середземно-морське</option>
+										<option value="">0</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+									</select>
+								</label>
+								<label class="col-sm-4">
+									<span class="d-block py-2">Лайнер *</span>
+									<select class="w-100 p-1">
+										<option value="">Noordam</option>
+										<option value="">0</option>
+										<option value="">1</option>
+									</select>
+								</label>
+								<label class="col-sm-4">
+									<span class="d-block py-2">З якого числа *</span>
+									<input class="w-100 d-block" type="date" name="start" value="2020-09-09" required>
+								</label>
+								<label class="col-sm-4">
+									<span class="d-block py-2">По яке число *</span>
+									<input class="w-100 d-block" type="date" name="end" value="2020-09-09" required>
+								</label>
+								<label class="col-sm-2">
+									<span class="d-block py-2">Дорослі</span>
+									<input class="w-100" min="1" type="number">
+								</label>
+								<label class="col-sm-2">
+									<span class="d-block py-2">Діти</span>
+									<input class="w-100" min="0" type="number">
+								</label>
+							</div>
+							<div class="col-sm-2 mx-n3 ml-sm-2 mx-sm-n0 m-0">
+								<input type="submit" value="пошук">
+							</div>
+						</form>
+					</div>
+					<div class="row py-5 ">
+						<div class="col-md-6 mt-3">
+							<div class="p2-card ml-5">
+								<div class="p2-img-box">
+									<img class="w-100" src="img/cruise.jpg" alt="1">
+								</div>
+								<div class="ml-5 pl-5">
+									<div class="p2-note-box pl-5">
+										<h5 class="py-2">Барселона – Марсель – Генуя</h5>
+										<span class="text-secondary">Круїзна компанія: </span> <span class="font-weight-bolder"> MSC</span><br>
+										<span class="text-secondary">Судно:</span>
+										<span class="font-weight-bolder">MSC FANTASIA!</span><br>
+										<div class="py-3"><a class="py-2 px-3 btn-style text-white" href="#">Більше</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 mt-3">
+							<div class="p2-card ml-5">
+								<div class="p2-img-box">
+									<img class="w-100" src="img/cruise.jpg" alt="1">
+								</div>
+								<div class="ml-5 pl-5">
+									<div class="p2-note-box pl-5">
+										<h5 class="py-2">Барселона – Марсель – Генуя</h5>
+										<span class="text-secondary">Круїзна компанія: </span> <span class="font-weight-bolder"> MSC</span><br>
+										<span class="text-secondary">Судно:</span>
+										<span class="font-weight-bolder">MSC FANTASIA!</span><br>
+										<div class="py-3"><a class="py-2 px-3 btn-style text-white" href="#">Більше</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 mt-3">
+							<div class="p2-card ml-5">
+								<div class="p2-img-box">
+									<img class="w-100" src="img/cruise.jpg" alt="1">
+								</div>
+								<div class="ml-5 pl-5">
+									<div class="p2-note-box pl-5">
+										<h5 class="py-2">Барселона – Марсель – Генуя</h5>
+										<span class="text-secondary">Круїзна компанія: </span> <span class="font-weight-bolder"> MSC</span><br>
+										<span class="text-secondary">Судно:</span>
+										<span class="font-weight-bolder">MSC FANTASIA!</span><br>
+										<div class="py-3"><a class="py-2 px-3 btn-style text-white" href="#">Більше</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 mt-3">
+							<div class="p2-card ml-5">
+								<div class="p2-img-box">
+									<img class="w-100" src="img/cruise.jpg" alt="1">
+								</div>
+								<div class="ml-5 pl-5">
+									<div class="p2-note-box pl-5">
+										<h5 class="py-2">Барселона – Марсель – Генуя</h5>
+										<span class="text-secondary">Круїзна компанія: </span> <span class="font-weight-bolder"> MSC</span><br>
+										<span class="text-secondary">Судно:</span>
+										<span class="font-weight-bolder">MSC FANTASIA!</span><br>
+										<div class="py-3"><a class="btn-hover py-2 px-3 btn-style text-white" href="#">Більше</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+
+				<div id="panel3" class="tab-pane fade">
+					<div class="sec-2-form pl-4 mx-n3 mx-sm-0">
+						<form class="text-white row ">
+							<div class="row col-sm-10 pb-1">
+								<label class="col-sm-6">
+									<span class="d-block py-2">Континент *</span>
+									<select class="w-100 p-1">
+										<option value="">Африка</option>
+										<option value="">Пд. Америка</option>
+										<option value="">Пн.Америка</option>
+										<option value="">Євразія</option>
+										<option value="">Австралія</option>
+									</select>
+								</label>
+								<label class="col-sm-6">
+									<span class="d-block py-2">Країна *</span>
+									<select class="w-100 p-1">
+										<option value="">По Україні</option>
+										<option value="">Турція</option>
+										<option value="">Болгарія</option>
+										<option value="">Єгипет</option>
+										<option value="">Тайланд</option>
+										<option value="">Бразілія</option>
+										<option value="">Індонезія</option>
+										<option value="">Болгарія</option>
+										<option value="">Франція</option>	
+										<option value="">Тд./Тп.</option>
+									</select>
+								</label>
+								<label class="col-sm-4">
+									<span class="d-block py-2">З якого числа *</span>
+									<input class="w-100 d-block" type="date" name="start" value="2020-09-09" required>
+								</label>
+								<label class="col-sm-4">
+									<span class="d-block py-2">По яке число *</span>
+									<input class="w-100 d-block" type="date" name="end" value="2020-09-09" required>
+								</label>
+								<label class="col-sm-2">
+									<span class="d-block py-2">Дорослі</span>
+									<input class="w-100" min="1" type="number">
+								</label>
+								<label class="col-sm-2">
+									<span class="d-block py-2">Діти</span>
+									<input class="w-100" min="0" type="number">
+								</label>
+							</div>
+							<div class="col-sm-2 mx-n3 ml-sm-2 mx-sm-n0 m-0">
+								<input type="submit" value="пошук">
+							</div>
+						</form>
+					</div>
+					<div class="row py-5">
+						<div class="col-sm-10 offset-sm-1 row">
+							<div class="col-md-4 col-sm-6 row mx-auto">
+								<div class="p2-flip-card">
+									<div class="p2-flip-img-box">
+										<img class="w-100" src="img/country/img-1.jpg" alt="1">
+										<h5 class="text-center">Турція</h5>
+									</div>
+									<div class="p2-flip-note p-2 text-center">
+										<h5 class="py-2">Name</h5>
+										<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo hic ea maxime quis cupiditate, quasi cumque vitae molestiae asperiores sunt.</p>
+										<a class="ml-5 py-1 px-3 btn-style" href="#">Більше</a>
+									</div>
+								</div>	
+							</div>
+							<div class="col-md-4 col-sm-6 row mx-auto">
+								<div class="p2-flip-card">
+									<div class="p2-flip-img-box">
+										<img class="w-100" src="img/country/img-2.jpg" alt="1">
+										<h5 class="text-center">Єгипет</h5>
+									</div>
+									<div class="p2-flip-note p-2 text-center">
+										<h5 class="py-2">Name</h5>
+										<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt id enim asperiores quis excepturi fugit ab ullam, expedita inventore illum.</p>
+										<a class="ml-5 py-1 px-3 btn-style" href="#">Більше</a>
+									</div>
+								</div>	
+							</div>
+							<div class="col-md-4 col-sm-6 row mx-auto">
+								<div class="p2-flip-card">
+									<div class="p2-flip-img-box">
+										<img class="w-100" src="img/country/img-3.jpg" alt="1">
+										<h5 class="text-center">Тайланд</h5>
+									</div>
+									<div class="p2-flip-note p-2 text-center">
+										<h5 class="py-2">Name</h5>
+										<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi pariatur, error quis quos distinctio quas asperiores illum odio, iure debitis.</p>
+										<a class="ml-5 py-1 px-3 btn-style" href="#">Більше</a>
+									</div>
+								</div>	
+							</div>
+							<div class="col-md-4 col-sm-6 row mx-auto">
+								<div class="p2-flip-card">
+									<div class="p2-flip-img-box">
+										<img class="w-100" src="img/country/img-4.jpg" alt="1">
+										<h5 class="text-center">Індонезія</h5>
+									</div>
+									<div class="p2-flip-note p-2 text-center">
+										<h5 class="py-2">Name</h5>
+										<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id nobis iure praesentium maxime architecto distinctio facilis iusto aut unde eveniet!</p>
+										<a class="ml-5 py-1 px-3 btn-style" href="#">Більше</a>
+									</div>
+								</div>	
+							</div>
+							<div class="col-md-4 col-sm-6 row mx-auto">
+								<div class="p2-flip-card">
+									<div class="p2-flip-img-box">
+										<img class="w-100" src="img/country/img-5.jpg" alt="1">
+										<h5 class="text-center">ОАЕ</h5>
+									</div>
+									<div class="p2-flip-note p-2 text-center">
+										<h5 class="py-2">Name</h5>
+										<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet sed asperiores provident dolores ratione repellat, minus harum! Ipsa, corrupti, blanditiis.</p>
+										<a class="ml-5 py-1 px-3 btn-style" href="#">Більше</a>
+									</div>
+								</div>	
+							</div>
+							<div class="col-md-4 col-sm-6 row mx-auto">
+								<div class="p2-flip-card">
+									<div class="p2-flip-img-box">
+										<img class="w-100" src="img/country/img-6.jpg" alt="1">
+										<h5 class="text-center">Болгарія</h5>
+									</div>
+									<div class="p2-flip-note p-2 text-center">
+										<h5 class="py-2">Name</h5>
+										<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quae dignissimos non, eligendi quas blanditiis distinctio magni quasi accusamus voluptas?</p>
+										<a class="ml-5 py-1 px-3 btn-style" href="#">Більше</a>
+									</div>
+								</div>	
+							</div>
+							<div class="col-md-4 col-sm-6 row mx-auto">
+								<div class="p2-flip-card">
+									<div class="p2-flip-img-box">
+										<img class="w-100" src="img/country/img-7.jpg" alt="1">
+										<h5 class="text-center">Австрія</h5>
+									</div>
+									<div class="p2-flip-note p-2 text-center">
+										<h5 class="py-2">Name</h5>
+										<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non est obcaecati qui natus quod illum, magni id sit facilis possimus.</p>
+										<a class="ml-5 py-1 px-3 btn-style" href="#">Більше</a>
+									</div>
+								</div>	
+							</div>
+							<div class="col-md-4 col-sm-6 row mx-auto">
+								<div class="p2-flip-card">
+									<div class="p2-flip-img-box">
+										<img class="w-100" src="img/country/img-8.jpg" alt="1">
+										<h5 class="text-center">Франція</h5>
+									</div>
+									<div class="p2-flip-note p-2 text-center">
+										<h5 class="py-2">Name</h5>
+										<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error cupiditate dolor minus libero id veniam ducimus architecto repudiandae aut odit.</p>
+										<a class="ml-5 py-1 px-3 btn-style" href="#">Більше</a>
+									</div>
+								</div>	
+							</div>
+							<div class="col-md-4 col-sm-6 row mx-auto">
+								<div class="p2-flip-card">
+									<div class="p2-flip-img-box">
+										<img class="w-100" src="img/country/img-9.jpg" alt="1">
+										<h5 class="text-center">Бразілія</h5>
+									</div>
+									<div class="p2-flip-note p-2 text-center">
+										<h5 class="py-2">Name</h5>
+										<p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sed quos tenetur earum, culpa quo. Architecto itaque quibusdam quam odit.</p>
+										<a class="ml-5 py-1 px-3 btn-style" href="#">Більше</a>
+									</div>
+								</div>	
+							</div>
+
+
+
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>	
+	<footer>
+		<div class="container py-3">
+			<div class="row footer-menu text-center">
+				<div class="col-sm-2"><div class="w-100 ml-5 mt-5 d-none d-sm-block"><img class="w-75" src="img/logo.png " alt="logo"></div></div>
+				<div class="col-sm-3 col-6">
+					<h6 class="w-100">Для клієнтів</h6>
+					<div class="py-sm-2">
+						<ul class="ml-n4">
+							<li><a href="#">Служба підтримки</a></li>
+							<li><a href="#">Довідка</a></li>
+							<li><a href="#">Корпоративні рахунки</a></li>
+							<li><a href="#">Фінансова інформація</a></li>
+							<li><a href="#">Правила та умови</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3 col-6">
+					<h6 class="w-100">Контакти</h6>
+					<div class="py-sm-2">
+						<ul class="ml-n4">
+							<li><a href="#">вул Пушкіна дом Колотушкіна</a></li>
+							<li><a href="#">+38 000 000 00 00</a></li>
+							<li><a href="#">+38 000 000 00 00</a></li>
+							<li><a href="#">ilechu@gmail.com</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3 col-6">
+					<h6 class="w-100">Послуги</h6>
+					<div class="py-sm-2">
+						<ul class="ml-n4">
+							<li><a href="#">Квитки онлайн</a></li>
+							<li><a href="#">Візова підтримка</a></li>
+							<li><a href="#">Страхування</a></li>
+							<li><a href="#">Подарунковий сертифікат</a></li>
+							<li><a href="#">Блог</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-1 col-6 pt-4 link-box">
+					<ul>
+						<li class="d-inline-block d-sm-block"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="d-inline-block d-sm-block"><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li class="d-inline-block d-sm-block"><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+						<li class="d-inline-block d-sm-block"><a href="#"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+</html>

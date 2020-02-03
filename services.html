@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Наші послуги</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="icon" href="img/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link crossorigin='anonymous' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css' integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay' rel='stylesheet'/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class=" d-none d-sm-block">
+		<div class="row">
+			<div class="col-sm-2 col-md-1 offset-sm-1 pt-2">
+				<a href="#"><img class="w-100" src="img/logo.png" alt="logo"></a>
+			</div>
+			<div class="col-sm-6 offset-md-1 offset-sm-0 py-2">
+				<ul class="row head-menu mt-3 mx-n5">
+					<li class="col-3">
+						<a class="d-block mx-n3" href="index.html">головна</a>
+					</li>
+					<li class="col-3">
+						<a class="d-block mx-n3" href="catalog.html">тури</a>
+					</li>
+					<li class="col-3">
+						<a class="d-block mx-n3 active
+						" href="#">послуги</a>
+					</li>
+					<li class="col-3">
+						<a class="d-block mx-n3" href="about.html">про нас</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-3 offset-sm-0 offset-md-1 col-md-2 mt-md-3 mt-sm-4">
+				<div class="mx-auto head-liks">
+					<a class="text-danger" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i></a>
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-telegram-plane"></i></a>
+				</div>
+			</div>
+		</div>	
+	</header>
+		<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Особистиц кабінет</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<form class="w-100">
+					<div class="modal-body">
+						<input class="form-control my-2" type="text" placeholder="Введіть логін">
+						<input class="form-control my-2" type="password" placeholder="Введіть пароль">
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal" class="btn btn-info" data-toggle="modal" data-target="#exampleModal2">Реєстрація</button>
+						<button type="button" data-dismiss="modal" class="btn btn-danger">Відміна</button>
+						<input type="submit" value="Відправити" class="btn btn-success">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel2">Реєстрація</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<form>
+					<div class="modal-body">
+						<input class="form-control my-2" type="text" placeholder="Введіть логін">
+						<input class="form-control my-2" type="email" placeholder="Введіть імейл">
+						<input class="form-control my-2" type="password" placeholder="Введіть пароль">
+						<input class="form-control my-2" type="password" placeholder="Введіть пароль підтвердження">
+						<input class="form-control my-2" type="tel" placeholder="Введіть номер телефону">
+						<div class="custom-control custom-switch">
+							<input type="checkbox" class="custom-control-input" id="customSwitch1">
+							<label class="custom-control-label text-secondary " for="customSwitch1">Надсилати новини</label>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal" class="btn btn-danger">Відміна</button>
+						<input type="submit" value="Відправити" class="btn btn-success">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-hidden mt-n3 d-block d-sm-none">
+		<button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+			<img class="w-100" src="img/logo.png" alt="logo">
+		</button>
+		<div class="navbar-collapse collapse navbar-menu py-3" id="navbarColor01" style="">
+			<div class="div">
+				<a class="user" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-user"></i></a>
+			</div>
+			<div class="my-3">
+				<div>
+					<a class="d-block w-100 p-1 text-uppercase text-center" href="index.html">головна</a>
+				</div>
+				<div>
+					<a class="d-block w-100 p-1 text-uppercase text-center" href=".catalog.html">тури</a>
+				</div>
+				<div>
+					<a class="d-block w-100 p-1 text-uppercase text-center" href="#">послуги</a>
+				</div>
+				<div>
+					<a class="d-block w-100 p-1 text-uppercase text-center" href="about.html">про нас</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<section class="page-3-sec-1">
+		<div class="container py-5">
+			<div class="py-5 my-5">
+				<h2 class="d-block text-center text-white title">Додаткові послуги</h2>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="row py-5">
+				<div class="col-sm-6"><img class="w-100" src="img/corp.jpg" alt="1"></div>
+				<div class="col-sm-6">
+					<div class="redline mb-2"></div>
+					<h3 class="mb-2">Корпоративний туризм</h3>
+					<p class="text-secondary text-14">Куди б махнути на вихідні? Як відсвяткувати ювілей фірми або чергову перемогу? Телефонуйте, а ми все придумаємо за вас! Ми запропонуємо Вашій увазі корпоративні тури, одноденні і багатоденні, тури вихідного дня та екскусіі, походи в гори та дегустаційні тури, які допоможуть Вам створити спільні яскраві моменти і радісні хвилини і отримати багато вражень, які буде приємно згадувати всім колективом, командою ще довгий час. Саме на роботі проходить основна частина нашого часу, а то й життя. І для того, щоб цей час був не лише продуктивний, а й цікавий та приємний, важливо перебувати у колі однодумців, відчуваючи командний дух, спільні цінності та інтереси.</p>
+					<a class="d-inline-block w-25 mx-auto text-center py-2 px-3 mt-2 btn-style" href="#">Більше</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>	
+		<div class="container py-5">	
+			<h3 class="w-100 text-center mb-5">Візова пітримка</h3>
+			<div class="row">
+				<div class="col-sm-4 my-3">
+					<div class="p3-visa mx-auto">
+						<div class="p3-step py-1 px-3 text-white"><span>Крок 1</span></div>
+						<div class="row p-3 p3-visa-box text-white">
+							<span class="col-2 py-2"><i class="fas fa-check-double"></i></span>
+							<h4 class="col-10">Обрати категорію візи</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 my-3">
+					<div class="p3-visa mx-auto">
+						<div class="p3-step py-1 px-3 text-white"><span>Крок 2</span></div>
+						<div class="row p-3 p3-visa-box text-white">
+							<span class="col-2 py-2"><i class="fas fa-id-card"></i></span>
+							<h4 class="col-10">Як подати документи</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 my-3">
+					<div class="p3-visa mx-auto">
+						<div class="p3-step py-1 px-3 text-white"><span>Крок 3</span></div>
+						<div class="row p-3 p3-visa-box text-white">
+							<span class="col-2 py-2"><i class="fas fa-pencil-alt"></i></span>
+							<h4 class="col-10">Що робити після подачі документів</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="ensure">
+		<div class="container p-5">
+			<div>
+				<div class="redline mb-3"></div>
+				<span class="text-uppercase text-white">Страховий поліс.</span>
+				<h4 class="my-4 text-white">Страхування поїздки</h4>
+				<a class="d-inline-block text-center py-2 px-3 mt-2 btn-style" href="#">купити онлайн</a>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container py-3">
+			<div class="row footer-menu text-center">
+				<div class="col-sm-2"><div class="w-100 ml-5 mt-5 d-none d-sm-block"><img class="w-75" src="img/logo.png " alt="logo"></div></div>
+				<div class="col-sm-3 col-6">
+					<h6 class="w-100">Для клієнтів</h6>
+					<div class="py-sm-2">
+						<ul class="ml-n4">
+							<li><a href="#">Служба підтримки</a></li>
+							<li><a href="#">Довідка</a></li>
+							<li><a href="#">Корпоративні рахунки</a></li>
+							<li><a href="#">Фінансова інформація</a></li>
+							<li><a href="#">Правила та умови</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3 col-6">
+					<h6 class="w-100">Контакти</h6>
+					<div class="py-sm-2">
+						<ul class="ml-n4">
+							<li><a href="#">вул Пушкіна дом Колотушкіна</a></li>
+							<li><a href="#">+38 000 000 00 00</a></li>
+							<li><a href="#">+38 000 000 00 00</a></li>
+							<li><a href="#">ilechu@gmail.com</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-3 col-6">
+					<h6 class="w-100">Послуги</h6>
+					<div class="py-sm-2">
+						<ul class="ml-n4">
+							<li><a href="#">Квитки онлайн</a></li>
+							<li><a href="#">Візова підтримка</a></li>
+							<li><a href="#">Страхування</a></li>
+							<li><a href="#">Подарунковий сертифікат</a></li>
+							<li><a href="#">Блог</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-1 col-6 pt-4 link-box">
+					<ul>
+						<li class="d-inline-block d-sm-block"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="d-inline-block d-sm-block"><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li class="d-inline-block d-sm-block"><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+						<li class="d-inline-block d-sm-block"><a href="#"><i class="fab fa-instagram"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+</html>

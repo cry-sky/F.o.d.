@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "FranxurterTotallyMedium";
+	src: url("../fonts/FranxurterTotallyMedium/FranxurterTotallyMedium.eot");
+	src: url("../fonts/FranxurterTotallyMedium/FranxurterTotallyMedium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/FranxurterTotallyMedium/FranxurterTotallyMedium.woff") format("woff"),
+	url("../fonts/FranxurterTotallyMedium/FranxurterTotallyMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}	
+@font-face {
+	font-family: "Lena";
+	src: url("../fonts/Lena/Lena.eot");
+	src: url("../fonts/Lena/Lena.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Lena/Lena.woff") format("woff"),
+	url("../fonts/Lena/Lena.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}	
+@font-face {
+	font-family: "ConstaciaModern";
+	src: url("../fonts/ConstaciaModern/ConstaciaModern.eot");
+	src: url("../fonts/ConstaciaModern/ConstaciaModern.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/ConstaciaModern/ConstaciaModern.woff") format("woff"),
+	url("../fonts/ConstaciaModern/ConstaciaModern.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}	
