@@ -610,6 +610,9 @@ li{
 	border: solid 10px #fff;
 	box-shadow: 0 0 10px rgba(0,0,0,.2);	
 	transition: 1s;
+	min-height: 150px;
+	display: flex;
+	align-items: center;
 }
 .p3-visa-box span{
 	font-size: 30px;
@@ -650,8 +653,8 @@ li{
 }
 @media (max-width: 767px){
 	.sec-2{
-	margin-top: -80px;
-}
+		margin-top: -80px;
+	}
 	.slick-dots{
 		transform: scale(0);
 	}
@@ -696,6 +699,7 @@ li{
 		position: absolute;
 		top: 0;bottom: 0;left: 0;right: 0;
 	}
+	
 }
 @media (max-width: 580px){
 	.sec-2-form input[type="submit"]{
